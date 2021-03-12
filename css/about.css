@@ -56,9 +56,9 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+ h2, h3{
     font-size: 18px;
-    margin-bottom: 15px;
+    margin: 15px 0;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -66,13 +66,80 @@ p {
     line-height: 1.4;
 }
 
+/* CODE */
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+/* #logo {
+    margin: 0;
+    padding: 0;
+} */
 
 /* NAVIGATION TOP */
+.navigation-top #logo {
+     padding: 10px;
+ }
 .navigation-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
 /* CONTENT TOP NAVIGATION */
+.navigation-content h1 {
+    font-size: 30px;
+    margin: 2% 0;
+}
+.navigation-content, .imageblock {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+.navigation-content p, button {
+    margin-bottom: 10px;
+}
+
+/* CONTENT WITH IMAGES */
+.content {
+     /* width: 40%; */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+.imageblock {
+     width: 50%;
+     margin-bottom: 35px;
+     display: flex;
+     flex-wrap: wrap;
+}
+ button {
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: dimgrey;
+    color: ghostwhite;
+ }
+
+ /* BOTTOM CONTENT */
+  .bottom-content h3 {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+
+  /* FOOTER */
+footer {
+    width: 100%;
+    background:grey;
+    margin: 20px 0;
+}
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 15px;
+}
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
